@@ -57,7 +57,7 @@ brand-section {
 }
 .slide img {
     width:100% !important; 
-    height: 450px !important;
+    height: 300px !important;
 }
 /* Next & previous buttons */
 .prev, .next {
@@ -145,9 +145,6 @@ brand-section {
     column-gap: 5%;
     align-items: center;
 }
-@media screen and (max-width: 900px) {
-  .card-section { justify-content: center; }
-}
 .card {
     position: relative;
     display: -webkit-box;
@@ -183,4 +180,9 @@ img {
 }
 .card-title {
     margin-bottom: 0.75rem;
+}
+@media screen and (max-width: 768px) {
+    .slide img { height: 300px !important; }
+    .card-section { justify-content: flex-start; }
+    .card { width: 100%; margin-left: 0; margin-left: 0; }
 }
